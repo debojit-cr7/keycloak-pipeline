@@ -3,7 +3,7 @@
   "requireApproval": "never",
   "version": "0.1.0",
   "bin": {
-    "cdk-pipelines-demo": "bin/cdk-pipelines-demo.js"
+    "cdk-pipelines-demo": "bin/cdkpipelines-demo.js"
   },
   "scripts": {
     "build": "tsc",
