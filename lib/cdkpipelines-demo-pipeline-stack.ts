@@ -39,7 +39,7 @@ import { ShellScriptAction } from '@aws-cdk/pipelines';
         buildCommand: 'npm run build'
       }),
    });
-  /* const preprod = new CdkpipelinesDemoStage(this, 'PreProd', {
+   const preprod = new CdkpipelinesDemoStage(this, 'PreProd', {
     env: { account: '361509912577', region: 'eu-west-1' }
   });
   
@@ -56,7 +56,7 @@ import { ShellScriptAction } from '@aws-cdk/pipelines';
       // Use 'curl' to GET the given URL and fail if it returns an error
       'curl -Ssf $ENDPOINT_URL',
     ],
-  })); */
+  })); 
    
   }
 }
