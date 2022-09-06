@@ -30,7 +30,7 @@ export class CdkpipelinesDemoStack extends Stack {
       directory: join(__dirname, "..", "keycloak"),
     });
     
-    new ecs_patterns.ApplicationLoadBalancedFargateService(
+    const service= new ecs_patterns.ApplicationLoadBalancedFargateService(
       this,
       "ApplicationFargateService",
       {
@@ -46,9 +46,9 @@ export class CdkpipelinesDemoStack extends Stack {
       }
     );
 
-   /* this.urlOutput = new CfnOutput(this, 'Url', {
+    this.urlOutput = new CfnOutput(this, 'Url', {
       value: service.loadBalancer.loadBalancerDnsName,
-    }); */
+    }); 
   }
 }
 
