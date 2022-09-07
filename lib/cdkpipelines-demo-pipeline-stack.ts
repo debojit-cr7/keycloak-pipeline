@@ -43,7 +43,7 @@ import { ShellScriptAction } from '@aws-cdk/pipelines';
   
   const preprodStage = pipeline.addApplicationStage(preprod);
   
-  preprodStage.addActions(new ShellScriptAction({
+ /* preprodStage.addActions(new ShellScriptAction({
     actionName: 'TestService',
     useOutputs: {
       
@@ -52,8 +52,8 @@ import { ShellScriptAction } from '@aws-cdk/pipelines';
     commands: [
       
       'curl -Ssf $ENDPOINT_URL',
-    ],
-  })); 
+    ], 
+  })); */
    
   }
 }
