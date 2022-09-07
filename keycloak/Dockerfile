@@ -17,5 +17,5 @@ RUN keytool -genkeypair -storepass password -storetype PKCS12 -keyalg RSA -keysi
 ENV KC_DB_URL=keycloakdb.cpycxe8wetlo.eu-west-1.rds.amazonaws.com
 ENV KC_DB_USERNAME=kadmin
 ENV KC_DB_PASSWORD=admin123
-ENV KC_HOSTNAME=keycloakdb.cpycxe8wetlo.eu-west-1.rds.amazonaws.com
+ENV KC_HOSTNAME=localhost
 ENTRYPOINT ["/opt/keycloak/bin/kc.sh"]
